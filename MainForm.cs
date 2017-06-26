@@ -73,12 +73,12 @@ namespace TestDriver
                 richTextBox1.Text = "";
                 richTextBox1.Text += "Test Case 1\n";
                 richTextBox1.Text += "Входные данные: a= 78508\n";
-                richTextBox1.Text += "Ожидаемый результат: res = -78508 && error = \"\"" + "\n";
+                richTextBox1.Text += "Ожидаемый результат: res = 78508 && error = \"\"" + "\n";
                 int res = CalcClass.ABS(78508);
                 string error = CalcClass.lastError;
                 richTextBox1.Text += "Код ошибки: " + error + "\n";
                 richTextBox1.Text += "Получившийся результат: " + "res = " + res.ToString() + " error = " + error.ToString() + "\n";
-                if (res == -258 && error == "")
+                if (res == 78508 && error == "")
                 {
                     richTextBox1.Text += "Тест пройден\n\n";
                 }
@@ -95,13 +95,13 @@ namespace TestDriver
             try
             {
                 richTextBox1.Text += "Test Case 2\n";
-                richTextBox1.Text += "Входные данные: a= -304\n";
-                richTextBox1.Text += "Ожидаемый результат: res = 304 && error = \"\"" + "\n";
-                int res = 0 - (CalcClass.ABS(-304));
+                richTextBox1.Text += "Входные данные: a= 304\n";
+                richTextBox1.Text += "Ожидаемый результат: res = -304 && error = \"\"" + "\n";
+                int res = 0 - (CalcClass.ABS(304));
                 string error = CalcClass.lastError;
                 richTextBox1.Text += "Код ошибки: " + error + "\n";
                 richTextBox1.Text += "Получившийся результат: " + "res = " + res.ToString() + " error = " + error.ToString() + "\n";
-                if (res == 304 && error == "")
+                if (res == -304 && error == "")
                 {
                     richTextBox1.Text += "Тест пройден\n\n";
                 }
@@ -117,9 +117,9 @@ namespace TestDriver
             try
             {
                 richTextBox1.Text += "Test Case 3\n";
-                richTextBox1.Text += "Входные данные: a= -78508, b= -304\n";
+                richTextBox1.Text += "Входные данные: a= 78508, b= -304\n";
                 richTextBox1.Text += "Ожидаемый результат: res = 78812 && error = \"\"" + "\n";
-                int res = (CalcClass.ABS(-78508)) + (CalcClass.ABS(-304));
+                int res = (CalcClass.ABS(78508)) - (CalcClass.IABS(304));
                 string error = CalcClass.lastError;
                 richTextBox1.Text += "Код ошибки: " + error + "\n";
                 richTextBox1.Text += "Получившийся результат: " + "res = " + res.ToString() + " error = " + error.ToString() + "\n";
