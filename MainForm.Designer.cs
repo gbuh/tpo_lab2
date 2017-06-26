@@ -37,7 +37,7 @@
             // 
             this.buttonStartRunEstimate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonStartRunEstimate.Location = new System.Drawing.Point(157, 404);
+            this.buttonStartRunEstimate.Location = new System.Drawing.Point(286, 404);
             this.buttonStartRunEstimate.Name = "buttonStartRunEstimate";
             this.buttonStartRunEstimate.Size = new System.Drawing.Size(156, 23);
             this.buttonStartRunEstimate.TabIndex = 0;
@@ -62,9 +62,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonStartDel.Location = new System.Drawing.Point(12, 404);
             this.buttonStartDel.Name = "buttonStartDel";
-            this.buttonStartDel.Size = new System.Drawing.Size(139, 23);
+            this.buttonStartDel.Size = new System.Drawing.Size(198, 23);
             this.buttonStartDel.TabIndex = 2;
-            this.buttonStartDel.Text = "Тестирование деления";
+            this.buttonStartDel.Text = "Тестирование унарного минуса";
             this.buttonStartDel.UseVisualStyleBackColor = true;
             this.buttonStartDel.Click += new System.EventHandler(this.buttonStartDel_Click);
             // 
