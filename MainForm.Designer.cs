@@ -62,7 +62,7 @@
             this.buttonStartDel.Name = "buttonStartDel";
             this.buttonStartDel.Size = new System.Drawing.Size(139, 35);
             this.buttonStartDel.TabIndex = 2;
-            this.buttonStartDel.Text = "Тестирование дел с ост";
+            this.buttonStartDel.Text = "Тестирование умноженеия";
             this.buttonStartDel.UseVisualStyleBackColor = true;
             this.buttonStartDel.Click += new System.EventHandler(this.buttonStartDel_Click);
             // 

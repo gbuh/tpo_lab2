@@ -73,12 +73,12 @@ namespace TestDriver
                 richTextBox1.Text = "";
                 richTextBox1.Text += "Test Case 1\n";
                 richTextBox1.Text += "Входные данные: a= 78508, b = -304\n";
-                richTextBox1.Text += "Ожидаемый результат: res = 76 && error = \"\""+"\n";
-                int res = CalcClass.Mod(78508, -304);
+                richTextBox1.Text += "Ожидаемый результат: res = -23866432 && error = \"\"" + "\n";
+                int res = CalcClass.Mult(78508, -304);
                 string error = CalcClass.lastError;
                 richTextBox1.Text += "Код ошибки: " + error + "\n";
                 richTextBox1.Text += "Получившийся результат: " +"res = "+ res.ToString() +" error = "+error.ToString() +"\n";
-                if (res == 76 && error == "")
+                if (res == -23866432 && error == "")
                 {
                     richTextBox1.Text += "Тест пройден\n\n";
                 }
@@ -97,7 +97,7 @@ namespace TestDriver
                 richTextBox1.Text += "Test Case 2\n";
                 richTextBox1.Text += "Входные данные: a= -2050800078, b = 3000000000\n";
                 richTextBox1.Text += "Ожидаемый результат: res = 0 && error = \"Error 06\"\n";
-                int res = CalcClass.Mod(-2050800078, 3000000000);
+                int res = CalcClass.Mult(-2050800078, 3000000000);
                 string error = CalcClass.lastError;
                 richTextBox1.Text += "Код ошибки: " + error + "\n";
                 richTextBox1.Text += "Получившийся результат: " + "res = " + res.ToString() + " error = " + error.ToString() + "\n";
@@ -120,7 +120,7 @@ namespace TestDriver
                 richTextBox1.Text += "Test Case 3\n";
                 richTextBox1.Text += "Входные данные: a= 3000000000, b = -2050800078\n";
                 richTextBox1.Text += "Ожидаемый результат: res = 0 && error = \"Error 06\"\n";
-                int res = CalcClass.Mod(3000000000, -2050800078);
+                int res = CalcClass.Mult(3000000000, -2050800078);
                 string error = CalcClass.lastError;
                 richTextBox1.Text += "Код ошибки: " + error+"\n";
                 richTextBox1.Text += "Получившийся результат: " + "res = " + res.ToString() + " error = " + error.ToString() + "\n";
@@ -142,12 +142,12 @@ namespace TestDriver
             {
                 richTextBox1.Text += "Test Case 4\n";
                 richTextBox1.Text += "Входные данные: a= 2000000000, b = 2000000000\n";
-                richTextBox1.Text += "Ожидаемый результат: res = 0 && error = \"\"\n";
-                int res = CalcClass.Mod(2000000000, 2000000000);
+                richTextBox1.Text += "Ожидаемый результат: res = 0 && error = \"Error 06\"\n";
+                int res = CalcClass.Mult(2000000000, 2000000000);
                 string error = CalcClass.lastError;
                 richTextBox1.Text += "Код ошибки: " + error +"\n";
                 richTextBox1.Text += "Получившийся результат: " + "res = " + res.ToString() + " error = " + error.ToString() + "\n";
-                if (res == 0 && error == "")
+                if (res == 0 && error == "Error 06")
                 {
                     richTextBox1.Text += "Тест пройден\n\n";
                 }
