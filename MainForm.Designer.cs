@@ -35,9 +35,9 @@
             // 
             // buttonStartRunEstimate
             // 
-            this.buttonStartRunEstimate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonStartRunEstimate.Location = new System.Drawing.Point(157, 397);
+            this.buttonStartRunEstimate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonStartRunEstimate.Location = new System.Drawing.Point(157, 404);
             this.buttonStartRunEstimate.Name = "buttonStartRunEstimate";
             this.buttonStartRunEstimate.Size = new System.Drawing.Size(156, 23);
             this.buttonStartRunEstimate.TabIndex = 0;
@@ -47,22 +47,24 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(546, 379);
+            this.richTextBox1.Size = new System.Drawing.Size(546, 386);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
             // buttonStartDel
             // 
-            this.buttonStartDel.Location = new System.Drawing.Point(12, 397);
+            this.buttonStartDel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonStartDel.Location = new System.Drawing.Point(12, 404);
             this.buttonStartDel.Name = "buttonStartDel";
-            this.buttonStartDel.Size = new System.Drawing.Size(139, 35);
+            this.buttonStartDel.Size = new System.Drawing.Size(139, 23);
             this.buttonStartDel.TabIndex = 2;
-            this.buttonStartDel.Text = "Тестирование умноженеия";
+            this.buttonStartDel.Text = "Тестирование деления";
             this.buttonStartDel.UseVisualStyleBackColor = true;
             this.buttonStartDel.Click += new System.EventHandler(this.buttonStartDel_Click);
             // 
@@ -70,7 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 432);
+            this.ClientSize = new System.Drawing.Size(570, 439);
             this.Controls.Add(this.buttonStartDel);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.buttonStartRunEstimate);
